@@ -1,26 +1,22 @@
+<!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-
 <body>
+    <head>
+        <style>
+        
+        h1 {
+          font-style: italic;
+        }
+        img {
+  border: 1px solid black;
 
-    <main class="container">
-      <h1>Hello, world!</h1>
-    </main>
- 
-    <py-script> 
-    from pyodide.http import pyfetch
-    import asyncio
-    symbol1 ="<"
-    symbol2="\""
-    symbol3="\">"
-    response = await pyfetch(url="https://dog.ceo/api/breeds/image/random", method="GET")
-    test = await response.json()
-    message1 = """<p>Hier kommt ein Bild:</p> """
-    print(message1)
-    urltest=test['message']
-    print(symbol1+"img src="+symbol2+urltest+symbol3)
-    </py-script>
-  </body> 
+  margin: 160px;
+  background-color: lightblue;
+}
+        </style>
+        </head>
+        <h1>Ballettschuhe</h1>
+<img src="https://image.posterlounge.ch/img/products/630000/621753/621753_poster_l.jpg" alt="Ballettschuhe" width="500" height="550">
+
+</body>
 </html>
